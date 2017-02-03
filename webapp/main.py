@@ -24,9 +24,9 @@ def index():
 # ============================== API Routes ===================================
 # ============================ GET: /leds/<state> =============================
 # read the LED status by GET method from curl for example
-# curl http://iot8e3c:5000/leds/1
-# curl http://iot8e3c:5000/leds/2
-# curl http://iot8e3c:5000/leds/3
+# curl http://10.0.1.41:5000/leds/1
+# curl http://10.0.1.41:5000/leds/2
+# curl http://10.0.1.41:5000/leds/3
 # -----------------------------------------------------------------------------
 @app.route("/leds/<int:led_state>", methods=['GET'])
 def leds(led_state):
@@ -35,7 +35,7 @@ def leds(led_state):
 
 # =============================== GET: /sw ====================================
 # read the switch input by GET method from curl for example
-# curl http://iot8e3c:5000/sw
+# curl http://10.0.1.41:5000/sw
 # -----------------------------------------------------------------------------
 @app.route("/sw", methods=['GET'])
 def sw():
@@ -44,7 +44,7 @@ def sw():
 
 # ======================= POST: /ledcmd/<data> =========================
 # set the LED state by POST method from curl. For example:
-# curl --data 'led=1&state=ON' http://iot8e3c:5000/ledcmd
+# curl --data 'led=1&state=ON' http://10.0.1.41:5000/ledcmd
 # -----------------------------------------------------------------------------
 @app.route("/ledcmd", methods=['POST'])
 def ledcommand():

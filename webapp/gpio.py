@@ -1,9 +1,15 @@
 import RPi.GPIO as GPIO
 
-LED1_PIN = 4    # cobbler pin 12 (GPIO18)
-LED2_PIN = 13    # cobbler pin 33 (GPIO13)
-LED3_PIN = 23    # cobbler pin 16 (GPIO23)
-SWITCH_PIN = 17  # cobbler pin 7  (GPIO27)
+#LED1_PIN = 4    # cobbler pin 12 (GPIO18)
+#LED2_PIN = 13    # cobbler pin 33 (GPIO13)
+#LED3_PIN = 23    # cobbler pin 16 (GPIO23)
+
+LED1_PIN = 17    # cobbler pin 12 (GPIO17)
+LED2_PIN = 27    # cobbler pin 33 (GPIO27)
+LED3_PIN = 22    # cobbler pin 16 (GPIO22)
+
+#SWITCH_PIN = 17  # cobbler pin 7  (GPIO29)
+SWITCH_PIN = 6   # cobbler pin 31  (GPIO6)
 
 class PiGpio(object):
     """Raspberry Pi Internet 'IoT GPIO."""
